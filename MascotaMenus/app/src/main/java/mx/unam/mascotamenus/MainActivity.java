@@ -8,7 +8,6 @@ import android.support.design.widget.Snackbar;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -18,8 +17,6 @@ import android.widget.AdapterView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
-
-import layout.fragment_favoritos;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -58,6 +55,17 @@ public class MainActivity extends AppCompatActivity {
             setSupportActionBar(toolbar);
         }
 
+        vpPager.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                /*Log.i("***","***");
+                Toast.makeText(getActivity(), "XXXX", Toast.LENGTH_SHORT).show();*/
+                Snackbar.make(v, "Replace with your own action", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+            }
+        });
         //
 
 /*

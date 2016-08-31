@@ -1,5 +1,6 @@
 package mx.unam.mascotamenus;
 
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -33,6 +34,14 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.Masc
     public void onBindViewHolder(final MascotaViewHolder mascotaViewHolder, int position) {
         final Mascota mascota=listMacotas.get(position);
         mascotaViewHolder.ivMascota.setImageResource(mascota.getFoto());
+       /* mascotaViewHolder.ivMascota.setOnClickListener( new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent;
+                intent=new Intent(this,Activity_Contacto.class);
+                startActivity(intent);
+            }
+        });*/
         mascotaViewHolder.tvNombre.setText(mascota.getNombre());
         mascotaViewHolder.tvRate.setText(String.valueOf(mascota.getRaiting()));
         mascotaViewHolder.ivHuesoBlanco.setOnClickListener(new View.OnClickListener() {
