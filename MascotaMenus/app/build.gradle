@@ -29,4 +29,6 @@ dependencies {
     compile 'com.rengwuxian.materialedittext:library:2.1.4'
     compile 'com.android.support:support-v4:24.1.0'
     compile 'com.mikhaellopez:circularimageview:3.0.2'
+    compile 'com.sun.mail:android-mail:1.5.5'
+    compile 'com.sun.mail:android-activation:1.5.5'
 }

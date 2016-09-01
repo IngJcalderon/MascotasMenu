@@ -22,5 +22,5 @@
         <activity android:name=".Activity_Contacto" />
         <activity android:name=".Activity_Acercade"></activity>
     </application>
-
+    <uses-permission android:name="android.permission.INTERNET"/>
 </manifest>

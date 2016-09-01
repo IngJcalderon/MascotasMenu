@@ -137,6 +137,7 @@ public class MainActivity extends AppCompatActivity {
 */
     private  ArrayList<Fragment> agregarFraments(){
         ArrayList<Fragment> fragments=new ArrayList<>();
+
         fragments.add(new RecyclerViewFragment());
         fragments.add(new fragment_favoritos());
 
@@ -148,6 +149,7 @@ public class MainActivity extends AppCompatActivity {
 
         tabLayout.getTabAt(0).setIcon(R.drawable.ic_home);
         tabLayout.getTabAt(0).setText("Lista");
+        //tabLayout.getTabAt(0).setCustomView(R.drawable.ic_home);
         tabLayout.getTabAt(1).setIcon(R.drawable.ic_favorito);
         tabLayout.getTabAt(1).setText("Mascota");
     }
